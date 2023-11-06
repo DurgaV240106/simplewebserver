@@ -60,6 +60,7 @@ content = """
                         </tr>
       </body>
 </html>
+"""
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
@@ -71,12 +72,11 @@ server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
-
 ```
 
 ## OUTPUT:
-![Alt text](<web 2.png>)
-![Alt text](<Screenshot 2023-10-23 220638.png>)
+![Alt text](<Screenshot 2023-11-06 220152.png>)
+![Alt text](<Screenshot 2023-11-06 220204.png>)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
